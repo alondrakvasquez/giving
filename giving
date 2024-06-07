@@ -1,0 +1,109 @@
+<?php
+	/**
+		* Template Name: Giving Page
+		* The template for displaying the giving page in the UCLA WordPress child theme.
+		*
+		* @package WordPress
+		* @subpackage ucla-wordpress-child
+		* @since 1.0.0
+	*/
+	
+	function enqueue_font_awesome() {
+		wp_enqueue_style( 'font-awesome', 'https://fontawesome.com/v4/assets/font-awesome/css/font-awesome.css' );
+	}
+	add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+	
+get_header(); ?>
+
+
+<main id="post-<?php the_ID(); ?>">
+	<div class="containers has-global-padding">
+		<div class="top">
+			<h1>Giving To Humanities</h1>
+		</div>
+		
+		<div class="header"> 
+			<div class="grid-container-element">
+				<div class="grid-child-element gce-button"><button class="gce-btn">Give Now <i class="fas fa-angle-right"></i></button></div>
+				<div class="grid-child-element gce-info">For any questions to giving, contact Sarah Murphy at <span>310-794-9005</span> or <a href="mailto:smurphy@support.ucla.edu">smurphy@support.ucla.edu</a></div>
+			</div>
+		</div>
+		<div class="mfd-message">
+			<img src="http://localhost/public/wp-content/uploads/2024/05/main.JPG" height="50%" style="width: 100%; height: 50%;" />
+		</div>
+		
+		<div class="sod-support" >
+			
+			<div class="message-area">
+				<div class="top-border-quote"><hr/></div>
+				<h2>Message from the Dean</h2>
+				
+				<div class="dean-message">
+					<p>Now more than ever, UCLA Humanities relies on your generosity to ensure academic excellence an innovative teaching.</p>
+					<p>With your support, we will continue to attract exceptional scholars, explore the rich legacy o human creativity and thought, and nurture graduates equipped to thriive as global citizens and repond with versatility to the challenges of our time.</p>
+					<p>Alexandra Minna Stern</br>
+					Dean od UCLA Humanities</p>
+				</div>
+				<div class="bottom-border-quote"><hr/></div>
+			</div>
+			<div class="dean-image"></div>
+		</div>
+		<div>
+			<div class="uclg-section-heading"><h2>Support our Departments and Centers</h2></div>
+			
+			<div class="uclg-support-section">
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/arts-history.jpg" alt="Image 1">
+					<div class="uclg-support-bottom-section">
+						Art History
+						<div class="clear"></div>
+						<button class="uclg-support-button">Give Back</button>
+					</div>
+				</div>
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/asian-language-and-culture.jpg" alt="Image 2">
+					<div class="uclg-support-bottom-section">
+						Asian Language And Culture
+						<div class="clear"></div>
+					<button class="uclg-support-button">Give Back</button></div>
+				</div>
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/center-for-17th-18th-century-studies.jpg" alt="Image 3">
+					<div class="uclg-support-bottom-section">
+						Center for 17th & 18th Century Studies
+						<div class="clear"></div>
+					<button class="uclg-support-button">Give Back</button></div>
+				</div>
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/center-for-liberal-arts-and-free-institutions.jpg" alt="Image 4">
+					<div class="uclg-support-bottom-section">
+						Center For Liberal Arts and Free Institutions
+						<div class="clear"></div>
+					<button class="uclg-support-button">Give Back</button></div>
+				</div>
+				
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/center-for-the-study-of-religion.jpg" alt="center-for-the-study-of-religion">
+					<div class="uclg-support-bottom-section">
+						Center For The Study of Religion
+						<div class="clear"></div>
+					<button class="uclg-support-button">Give Back</button></div>
+				</div>
+				
+				<div class="uclg-support-box">
+					<img src="http://localhost/public/wp-content/uploads/2024/05/classics.jpg" alt="center-for-the-study-of-religion">
+					<div class="uclg-support-bottom-section">
+						Classics
+						<div class="clear"></div>
+					<button class="uclg-support-button">Give Back</button></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+<?php
+	get_footer();
